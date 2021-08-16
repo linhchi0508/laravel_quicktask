@@ -47,6 +47,7 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">{{ trans('homepage.list_student') }}</a></li>
                             <li><a class="dropdown-item" href="#">{{ trans('homepage.creat_student') }}</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item">
