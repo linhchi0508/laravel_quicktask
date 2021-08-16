@@ -21,7 +21,9 @@ class Student extends Model
     ];
 
     public function subjects(){
-        return $this->belongsToMany(Subject::class, 'student_subject', 'subject_id', 'student_id');
+        return $this->belongsToMany(Subject::class, 'student_subject', 'student_id', 'subject_id')
+                    ->withPivot('point')
+                    ;
     }
 
 }

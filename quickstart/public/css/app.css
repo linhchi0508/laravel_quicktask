@@ -1,5 +1,60 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header1 {
+  background-color: #06d995;
+  height: 60px;
+}
+
+.header1 a {
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu {
+  background-color: #333;
+  height: 1000px;
+  margin-top: -50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.menu .dropdowm_item {
+  color: black;
+  font-size: 12px;
+}
+
+.profile h4 {
+  margin-left: 29px;
+}
+
+.avatar img {
+  width: 250px;
+  height: 250px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+p .information {
+  border-bottom: 1px solid #DCDCDC;
+}
+
+img .phone {
+  height: 30px;
+  width: 30px;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

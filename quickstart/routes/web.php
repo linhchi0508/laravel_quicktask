@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+Route::resource('student', 'App\Http\Controllers\StudentController');
+Route::post('student/update/{id}','App\Http\Controllers\StudentController@update')->name('student_update');
+Route::resource('subject', 'App\Http\Controllers\SubjectController');
+Route::post('student/point/{id}', 'App\Http\Controllers\StudentController@createPoint')->name('point.creat');
+Route::delete('student/{student_id}/point/{subject_id}','App\Http\Controllers\StudentController@destroyPoint')->name('point.destroy');
+Route::get('language/{locale}', 'App\Http\Controllers\LanguageController@index')->name('language.index');
+
