@@ -33,4 +33,20 @@ class SubjectController extends Controller
 
         return redirect()->back()->with('message', trans('message.delete_success'));
     }
+
+    public function edit($id)
+    {
+        $subject = Subject::findOrFail($id);
+
+        return view('layouts.edit_subject', compact('subject'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $subject= new Subject();
+        $subject::findOrFail($id)->update($request->all());
+
+        return redirect()->route('subject.index')->with('message', trans('message.edit_success'));
+    }
+
 }
