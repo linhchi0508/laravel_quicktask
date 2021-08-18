@@ -12,6 +12,15 @@
     <section class="header">
         <div class="header1 mb-5 d-flex justify-content-center">
             <a href="#"><h2>{{ trans('homepage.manage') }}</h2></a>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="{{ route('student.index') }}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-check-square-o nav_icon"></i>{{ trans('homepage.language') }}</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{{ route('language.index','en') }}">en</a></li>
+                    <li><a class="dropdown-item" href="{{ route('language.index',['vi']) }}">vi</a></li>
+
+                </ul>
+            </li>
         </div>
         <div class="navbar-default sidebar row " role="navigation">
             <div class="sidebar-nav navbar-collapse col-2 menu">

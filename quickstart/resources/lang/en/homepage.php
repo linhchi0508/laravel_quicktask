@@ -1,3 +1,4 @@
+  
 <?php
 
 return [
@@ -13,7 +14,7 @@ return [
     'subject_code' => 'Subject Code',
     'list_subject' => 'List Subject',
     'list_student' => 'List Student',
-    'manjor' => 'Manjor',
+    'major' => 'Major',
     'id' => 'Id',
     'student_number' => 'Student Number',
     'fullname' => 'Full Name',
@@ -29,4 +30,8 @@ return [
     'dtvt' => 'Khoa Điện tử viễn thông',
     'dm' => 'Khoa dệt may',
     'tdh' => 'Khoa tự động hóa',
+    'delete' => 'Delete',
+    'new_student' => 'New Student',
+    'point' => 'Point',
+    'language' => 'Language',
 ];
